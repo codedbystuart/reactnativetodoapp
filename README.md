@@ -1,50 +1,36 @@
-# Welcome to your Expo app 👋
+# React Native To-Do List App Test
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Objective
+Using the project preset for you, add logic that allows users to add, display, and delete tasks. This test evaluates your ability to use React Native components, manage state, and style the application. Bonus points for implementing navigation.
 
-## Get started
+---
 
-1. Install dependencies
+## Requirements
+Your assignment will be handled in the file `app/(tabs)/index.tsx`
 
+### Core Features:
+1. Display a list of tasks.
+2. Allow users to add new tasks using an input field and a button.
+3. Each task in the list should have a delete button to remove it.
+4. Use `FlatList` to render the tasks.
+
+### Styling:
+- Center the input field and button at the top of the screen.
+- Style task items with borders, padding, and margin to ensure the app looks organized.
+
+### State Management:
+- Use React's `useState` hook to manage the list of tasks.
+
+### Bonus Features (Optional):
+- Add a second screen using React Navigation where users can view details of a task.
+- Clicking a task in the list should navigate to the second screen and display details like the task name and creation date.
+
+---
+
+## Setup Instructions
+
+1. **Initialize the Project:**
    ```bash
+   cd TodoApp
    npm install
-   ```
-
-2. Start the app
-
-   ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+   npm start
