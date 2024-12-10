@@ -1,18 +1,25 @@
 # React Native To-Do List App Test
 
 ## Objective
-Using the project preset for you, add logic that allows users to add, display, and delete tasks. This test evaluates your ability to use React Native components, manage state, and style the application. Bonus points for implementing navigation.
+Using the project preset for you, Create a React Native app that integrates with a real-world API. The app should allow users to fetch a list of tasks from a remote server, display them, and manage the tasks locally by adding, updating, and deleting tasks. This test evaluates your ability to work with React Native components, manage state, handle API calls, and style the application.
 
 ---
 
 ## Requirements
 Your assignment will be handled in the file `app/(tabs)/index.tsx`
 
+Use the following public API to fetch a list of tasks:
+GET https://jsonplaceholder.typicode.com/todos
+
+
 ### Core Features:
-1. Display a list of tasks.
-2. Allow users to add new tasks using an input field and a button.
+1. Display the fetched  list of tasks in a `Flatlist`.
+2. Allow users to add a new task locally (does not need to persist on the server) using an input field and a button.
 3. Each task in the list should have a delete button to remove it.
 4. Use `FlatList` to render the tasks.
+5. Handle errors gracefully when fetching tasks (e.g., display an error message if the API call fails).
+6. Pagination: Load tasks in batches of 20 from the API, fetching more as the user scrolls.
+7. Add a second screen using React Navigation to show more details about a task when a user taps on it.
 
 ### Styling:
 - Center the input field and button at the top of the screen.
@@ -21,11 +28,6 @@ Your assignment will be handled in the file `app/(tabs)/index.tsx`
 ### State Management:
 - Use React's `useState` hook to manage the list of tasks.
 
-### Bonus Features (Optional):
-- Add a second screen using React Navigation where users can view details of a task.
-- Clicking a task in the list should navigate to the second screen and display details like the task name and creation date.
-
----
 
 ## Setup Instructions
 
